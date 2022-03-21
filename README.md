@@ -156,3 +156,10 @@ Demo提供Maven版本和no-maven版本，分别适用于会用mavne和不会用m
 ### 1.0.0（2011-10-23）鼻祖
 
 1. 第一个原始版本，当时应该只有流程部署和流程启动。。。
+
+# 启动
+mvn jetty:run
+初始化（重建数据库）请使用下面的命令：
+mvn antrun:run -Prefresh-db
+仅插入用户角色信息请使用下面的命令：
+mvn antrun:run -Pinitdatas
